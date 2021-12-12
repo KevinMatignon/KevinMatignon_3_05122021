@@ -12,6 +12,33 @@ ul {
   list-style: none;
   padding: 0; }
 
+/*BUTTON*/
+.btn {
+  margin-top: 20px;
+  padding: 1rem;
+  border-radius: 25px;
+  border: 1px solid;
+  color: white;
+  background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
+  font-size: 16px;
+  font-weight: bold; }
+
+.btn-pages {
+  display: flex;
+  justify-content: center; }
+
+.btn-var {
+  margin-top: 20px;
+  padding: 1rem;
+  border-radius: 25px;
+  border: 1px solid;
+  color: white;
+  background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
+  font-size: 16px;
+  font-weight: bold;
+  width: 50%; }
+
+/*ACCUEIL*/
 /*HEADER*/
 .header {
   text-align: center; }
@@ -37,15 +64,6 @@ ul {
       margin-top: 20px;
       color: #6c6b6b;
       font-size: 17px; }
-    .header-info button {
-      margin-top: 20px;
-      padding: 1rem;
-      border-radius: 25px;
-      border: 1px solid;
-      color: white;
-      background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
-      font-size: 16px;
-      font-weight: bold; }
 
 /*FONCTION*/
 .fonction {
@@ -110,3 +128,51 @@ ul {
     padding: 0.5rem 0; }
   .footer li i {
     margin-right: 5px; }
+
+/*PAGERESTAURANTS*/
+/*HEADER*/
+.headerrest {
+  font-family: 'Shrikhand', cursive;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem; }
+
+/*MAINRESTAURANTS*/
+.mainrest {
+  display: flex;
+  flex-direction: column; }
+  .mainrest img {
+    object-fit: cover;
+    max-height: 250px; }
+  .mainrest-menu {
+    padding: 1rem 1.5rem;
+    border-radius: 30px 30px 0 0;
+    background: #eaeaea;
+    margin-top: -30px; }
+  .mainrest h2 {
+    font-family: 'Shrikhand', cursive;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .mainrest span {
+    font-family: 'Roboto', sans-serif; }
+  .mainrest-line {
+    height: 3px;
+    width: 40px;
+    background: #99E2D0; }
+  .mainrest-box {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 20px;
+    margin-bottom: 20px; }
+  .mainrest-food {
+    padding: 0.6rem;
+    background: white;
+    border-radius: 20px;
+    max-height: 68px; }
+    .mainrest-food p {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
