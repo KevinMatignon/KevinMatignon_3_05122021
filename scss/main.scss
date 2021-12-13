@@ -108,7 +108,7 @@ ul{
 /*RESTAURANT*/
 .restaurants{
     background: #eaeaea;
-    padding: 2rem;
+    padding: 1rem;
     font-family: 'Roboto', sans-serif;
     & h2{
         margin-bottom: 20px;
@@ -130,6 +130,11 @@ ul{
     }
     &-text{
         padding: 0.5rem 0.5rem;
+        & h3{
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+        }
     }
 }
 /*FOOTER*/
