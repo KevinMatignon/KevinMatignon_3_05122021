@@ -116,6 +116,15 @@ ul{
     &-cards{
         border-radius: 20px;
         box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.75);
+        position: relative;
+    }
+    &-news{
+        position: absolute;
+        top: 20px;
+        right: 15px;
+        background: $color-tertiary;
+        padding: 5px;
+        border-radius: 2px;
     }
     &-container{
         display: flex;
@@ -134,6 +143,9 @@ ul{
             display: flex;
             align-items: flex-end;
             justify-content: space-between;
+            & i:hover{
+                background: $color-btn;
+            }
         }
     }
 }
