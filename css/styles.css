@@ -44,8 +44,7 @@ ul {
   text-align: center; }
   .header-title {
     font-family: 'Shrikhand', cursive;
-    padding: 0.5rem;
-    letter-spacing: 1px; }
+    padding: 0.5rem; }
   .header-location {
     display: flex;
     justify-content: center;
@@ -150,6 +149,8 @@ ul {
   display: flex;
   align-items: center;
   padding: 0.5rem; }
+  .headerrest h1 {
+    margin: 0 auto; }
 
 /*MAINRESTAURANTS*/
 .mainrest {
