@@ -38,6 +38,7 @@ ul {
   font-weight: bold;
   width: 50%; }
 
+/*LOADING SPINNER*/
 /*ACCUEIL*/
 /*HEADER*/
 .header {
@@ -80,14 +81,27 @@ ul {
   .fonction-step p {
     background: #9356DC;
     color: white;
-    height: 20px;
-    width: 20px;
-    text-align: center;
-    border-radius: 20px; }
+    height: 25px;
+    width: 25px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -3px;
+    z-index: 1; }
   .fonction-itext {
     width: 100%;
-    background: #99E2D0;
-    border-radius: 20px; }
+    background: white;
+    font-weight: 600;
+    border-radius: 20px;
+    padding: 1.5rem;
+    box-shadow: 2px 2px 6px 0px black; }
+    .fonction-itext:hover {
+      background: rgba(147, 86, 220, 0.25); }
+      .fonction-itext:hover i {
+        color: #9356DC; }
+    .fonction-itext span {
+      margin-left: 25px; }
 
 /*RESTAURANT*/
 .restaurants {
@@ -105,8 +119,9 @@ ul {
     top: 20px;
     right: 15px;
     background: #99E2D0;
-    padding: 5px;
-    border-radius: 2px; }
+    padding: 5px 10px;
+    border-radius: 2px;
+    color: #008766; }
   .restaurants-container {
     display: flex;
     flex-direction: column;
@@ -117,7 +132,7 @@ ul {
       border-radius: 20px 20px 0 0;
       max-height: 205px; }
   .restaurants-text {
-    padding: 0.5rem 0.5rem; }
+    padding: 0.8rem; }
     .restaurants-text h3 {
       display: flex;
       align-items: flex-end;
@@ -168,7 +183,8 @@ ul {
     font-family: 'Shrikhand', cursive;
     display: flex;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    margin-bottom: 20px; }
   .mainrest span {
     font-family: 'Roboto', sans-serif; }
   .mainrest-line {
