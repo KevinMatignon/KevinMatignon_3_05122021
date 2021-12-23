@@ -45,7 +45,52 @@ ul{
 }
 
 /*LOADING SPINNER*/
+.loader {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: #FFF;
+    left: 0;
+    top: 0;
+    z-index: 10000;
+    animation: loader 1s forwards;
+}
+@keyframes loader {
+    0% {
+        opacity: 1;
+    }
 
+    100% {
+        opacity: 0;
+        z-index: -10;
+    }
+}
+.loader-circle {
+    border: 10px solid $color-primary;
+    border-top: 10px solid $color-second;
+    border-bottom: 10px solid $color-tertiary;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin 3s linear forwards;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        opacity: 0;
+    }
+}
 /*ACCUEIL*/
 /*HEADER*/
 .header{
@@ -92,6 +137,7 @@ ul{
     &-step{
         display: flex;
         align-items: center;
+        cursor: pointer;
     }
     &-step p{
         background: $color-primary;
@@ -249,5 +295,25 @@ ul{
             justify-content: space-between;
             align-items: center;
         }
+    }
+    .mf1{
+        animation: fadein 1s ease-in-out forwards;
+    }
+    .mf2{
+        animation: fadein 2s ease-in-out forwards;
+    }
+    .mf3{
+        animation: fadein 3s ease-in-out forwards;
+    }
+    .mf4{
+        animation: fadein 4s ease-in-out forwards;
+    }
+}
+@keyframes fadein {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
     }
 }
