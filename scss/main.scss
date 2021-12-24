@@ -41,7 +41,6 @@ ul{
     background: $color-btn;
     font-size: 16px;
     font-weight: bold;
-    width: 50%;
 }
 
 /*LOADING SPINNER*/
@@ -59,7 +58,6 @@ ul{
     0% {
         opacity: 1;
     }
-
     100% {
         opacity: 0;
         z-index: -10;
@@ -72,7 +70,7 @@ ul{
     border-radius: 50%;
     width: 100px;
     height: 100px;
-    animation: spin 3s linear forwards;
+    animation: spinner 3s linear forwards;
     margin: auto;
     position: absolute;
     top: 0;
@@ -80,7 +78,7 @@ ul{
     right: 0;
     bottom: 0;
 }
-@keyframes spin {
+@keyframes spinner {
     0% {
         transform: rotate(0deg);
         opacity: 1;
@@ -209,9 +207,22 @@ ul{
             align-items: flex-end;
             justify-content: space-between;
             & i:hover{
-                background: $color-btn;
+                font-weight: 600;
+                animation: fill 1s linear forwards;
+                color: #d46bdb;
             }
         }
+    }    
+}
+@keyframes fill {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
     }
 }
 /*FOOTER*/
@@ -268,6 +279,11 @@ ul{
         justify-content: space-between;
         align-items: center;
         margin-bottom: 20px;
+        & i:hover{
+            font-weight: 600;
+            animation: fill 1s linear forwards;
+            color: #d46bdb;
+        }
     }
     & span{
         font-family: 'Roboto', sans-serif;
@@ -290,6 +306,10 @@ ul{
         background: white;
         border-radius: 20px;
         max-height: 68px;
+        &:hover{
+            background: #9356DC;
+            cursor: pointer;
+        }
         & p{
             display: flex;
             justify-content: space-between;
