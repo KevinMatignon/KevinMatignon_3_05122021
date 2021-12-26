@@ -21,7 +21,10 @@ ul {
   color: white;
   background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
   font-size: 16px;
-  font-weight: bold; }
+  font-weight: bold;
+  cursor: pointer; }
+  .btn:hover {
+    transform: scale(1.05); }
 
 .btn-pages {
   display: flex;
@@ -35,7 +38,10 @@ ul {
   color: white;
   background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
   font-size: 16px;
-  font-weight: bold; }
+  font-weight: bold;
+  cursor: pointer; }
+  .btn-var:hover {
+    transform: scale(1.05); }
 
 /*LOADING SPINNER*/
 .loader {
@@ -143,6 +149,13 @@ ul {
     .fonction-itext span {
       margin-left: 25px; }
 
+@media screen and (min-width: 1280px) {
+  .fonction h2 {
+    text-align: center; }
+  .fonction-list {
+    flex-direction: row;
+    justify-content: center; } }
+
 /*RESTAURANT*/
 .restaurants {
   background: #eaeaea;
@@ -153,7 +166,11 @@ ul {
   .restaurants-cards {
     border-radius: 20px;
     box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.75);
-    position: relative; }
+    position: relative;
+    min-width: 300px; }
+    .restaurants-cards:hover {
+      transform: scale(1.01);
+      box-shadow: 2px 2px 6px 0px #9356DC; }
   .restaurants-news {
     position: absolute;
     top: 20px;
@@ -190,6 +207,13 @@ ul {
   100% {
     opacity: 1; } }
 
+@media screen and (min-width: 1280px) {
+  .restaurants-container {
+    flex-flow: row wrap;
+    justify-content: space-between; }
+  .restaurants-cards {
+    width: 49%; } }
+
 /*FOOTER*/
 .footer {
   background: #353535;
@@ -206,6 +230,14 @@ ul {
     padding: 0.5rem 0; }
   .footer li i {
     margin-right: 5px; }
+
+@media screen and (min-width: 1280px) {
+  .footer p {
+    text-align: center;
+    font-size: 1.5rem; }
+  .footer ul {
+    display: flex;
+    justify-content: space-around; } }
 
 /*PAGERESTAURANTS*/
 /*HEADER*/
@@ -258,7 +290,6 @@ ul {
     border-radius: 20px;
     max-height: 68px; }
     .mainrest-food:hover {
-      background: #9356DC;
       cursor: pointer; }
     .mainrest-food p {
       display: flex;
