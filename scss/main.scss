@@ -71,7 +71,7 @@ ul{
         z-index: -10;
     }
 }
-.loader-circle {
+.loader-spinner {
     border: 10px solid $color-primary;
     border-top: 10px solid $color-second;
     border-bottom: 10px solid $color-tertiary;
@@ -277,6 +277,10 @@ ul{
     & li i{
         margin-right: 5px;
     }
+    & li a:hover{
+        color: $color-tertiary;
+        text-decoration:underline;
+    }
 }
 @media screen and (min-width:1280px) {
     .footer p{
@@ -346,7 +350,7 @@ ul{
         padding: 0.6rem;
         background: white;
         border-radius: 20px;
-        max-height: 68px;
+        text-overflow: ellipsis;
         &:hover{
             cursor: pointer;
         }

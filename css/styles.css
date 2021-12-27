@@ -61,7 +61,7 @@ ul {
     opacity: 0;
     z-index: -10; } }
 
-.loader-circle {
+.loader-spinner {
   border: 10px solid #9356DC;
   border-top: 10px solid #FF79DA;
   border-bottom: 10px solid #99E2D0;
@@ -230,6 +230,9 @@ ul {
     padding: 0.5rem 0; }
   .footer li i {
     margin-right: 5px; }
+  .footer li a:hover {
+    color: #99E2D0;
+    text-decoration: underline; }
 
 @media screen and (min-width: 1280px) {
   .footer p {
@@ -288,7 +291,7 @@ ul {
     padding: 0.6rem;
     background: white;
     border-radius: 20px;
-    max-height: 68px; }
+    text-overflow: ellipsis; }
     .mainrest-food:hover {
       cursor: pointer; }
     .mainrest-food p {
