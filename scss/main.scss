@@ -19,6 +19,8 @@ ul{
 }
 /*BUTTON*/
 .btn{
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
     margin-top: 20px;
     padding: 1rem;
     border-radius: 25px;
@@ -60,7 +62,7 @@ ul{
     left: 0;
     top: 0;
     z-index: 10000;
-    animation: loader 1s forwards;
+    animation: loader 3s forwards;
 }
 @keyframes loader {
     0% {
@@ -154,7 +156,7 @@ ul{
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: -3px;
+        margin: -10px;
         z-index: 1;
     }
     &-itext{
@@ -347,17 +349,59 @@ ul{
         margin-bottom: 20px;
     }
     &-food{
+        display: flex;
+        flex-direction: column;
         padding: 0.6rem;
         background: white;
         border-radius: 20px;
-        text-overflow: ellipsis;
+        height: 72px;
         &:hover{
             cursor: pointer;
+            .slidebox{
+                visibility: initial;
+                width: 50px;
+            }
+            & strong{
+                transform: translateX(-170%);
+            }
+            & i{
+                animation: rotateicon 0.5s ease-in-out forwards;
+            }   
+        }
+        & strong{
+            transition: 0.5s linear;
         }
         & p{
             display: flex;
             justify-content: space-between;
             align-items: center;
+            text-overflow: ellipsis;
+        }  
+    }
+    .slidebox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $color-tertiary;
+        position: absolute;
+        height: 72px;
+        width: 0%;
+        border-radius: 0 20px 20px 0;
+        margin-block-start: -10px;
+        right: 24px;
+        transition: 0.5s linear;
+        visibility: hidden;
+        & i{
+            color: white;
+            font-size: 1.5rem;
+        }
+    }
+    @keyframes rotateicon {
+        0%{
+            transform: rotate(270deg);
+        }
+        100%{
+            transform: rotate(0deg);
         }
     }
     .mf1{
