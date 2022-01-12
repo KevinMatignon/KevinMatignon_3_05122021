@@ -24,7 +24,8 @@ ul {
   background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
   font-size: 16px;
   font-weight: bold;
-  cursor: pointer; }
+  cursor: pointer;
+  transition-duration: 300ms; }
   .btn:hover {
     transform: scale(1.05); }
 
@@ -41,7 +42,8 @@ ul {
   background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
   font-size: 16px;
   font-weight: bold;
-  cursor: pointer; }
+  cursor: pointer;
+  transition-duration: 300ms; }
   .btn-var:hover {
     transform: scale(1.05); }
 
@@ -169,7 +171,8 @@ ul {
     border-radius: 20px;
     box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.75);
     position: relative;
-    min-width: 300px; }
+    min-width: 300px;
+    background: white; }
     .restaurants-cards:hover {
       transform: scale(1.01);
       box-shadow: 2px 2px 6px 0px #9356DC; }
@@ -196,16 +199,30 @@ ul {
       display: flex;
       align-items: flex-end;
       justify-content: space-between; }
-      .restaurants-text h3 i:hover {
-        font-weight: 600;
-        animation: fill 1s linear forwards;
-        color: #d46bdb; }
+  .restaurants .empty {
+    position: absolute;
+    right: 13px; }
+    .restaurants .empty:hover {
+      opacity: 0; }
+  .restaurants .full {
+    opacity: 0; }
+    .restaurants .full:hover {
+      opacity: 1;
+      background: linear-gradient(0deg, #ff79da 0%, #9356dc 100%);
+      color: transparent;
+      -webkit-background-clip: text;
+      animation: fill 0.5s ease forwards;
+      transform: scale(1.15); }
 
 @keyframes fill {
   0% {
     opacity: 0; }
+  25% {
+    opacity: 0.25; }
   50% {
     opacity: 0.5; }
+  75% {
+    opacity: 0.7; }
   100% {
     opacity: 1; } }
 
@@ -327,7 +344,9 @@ ul {
     visibility: hidden; }
     .mainrest .slidebox i {
       color: white;
-      font-size: 1.5rem; }
+      border-radius: 50%;
+      font-size: 1.5rem;
+      overflow: hidden; }
 
 @keyframes rotateicon {
   0% {
