@@ -238,9 +238,6 @@ ul{
     .empty{
         position: absolute;
         right: 13px;
-        &:hover{
-            opacity: 0;
-        }
     }
     .full{
         opacity: 0;
@@ -383,23 +380,34 @@ ul{
                 visibility: initial;
                 width: 50px;
             }
-            & strong{
-                transform: translateX(-170%);
-            }
             & i{
                 animation: rotateicon 0.5s ease-in-out forwards;
-            }   
-        }
-        & strong{
-            transition: 0.5s linear;
-        }
-        & p{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            text-overflow: ellipsis;
-        }  
+            }
+            & span{
+                transform: translateX(-50px);
+            }           
     }
+    & h3{
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden; 
+    }
+    .mainrest-text{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        & p{
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            
+        }
+        & span{
+            font-weight: bold;
+            transition-duration: 0.7s;
+        }
+    }     
+}
     .slidebox{
         display: flex;
         justify-content: center;
@@ -422,7 +430,7 @@ ul{
     }
     @keyframes rotateicon {
         0%{
-            transform: rotate(270deg);
+            transform: rotate(-270deg);
         }
         100%{
             transform: rotate(0deg);
