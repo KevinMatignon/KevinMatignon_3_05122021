@@ -380,6 +380,9 @@ ul{
                 visibility: initial;
                 width: 50px;
             }
+            & h3{
+                width: 68%;
+            }
             & i{
                 animation: rotateicon 0.5s ease-in-out forwards;
             }
@@ -390,23 +393,29 @@ ul{
     & h3{
         white-space: nowrap;
         text-overflow: ellipsis;
-        overflow: hidden; 
+        overflow: hidden;
+        width: 100%;
+        transition: width 1s;
+    }    
+}
+&-text{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    & p{
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 100%;
+        transition: width 1s;
+        &:hover{
+            width: 68%;
+        }
     }
-    .mainrest-text{
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        & p{
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            
-        }
-        & span{
-            font-weight: bold;
-            transition-duration: 0.7s;
-        }
-    }     
+    & span{
+        font-weight: bold;
+        transition-duration: 0.7s;
+    }
 }
     .slidebox{
         display: flex;

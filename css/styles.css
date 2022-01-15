@@ -316,6 +316,8 @@ ul {
       .mainrest-food:hover .slidebox {
         visibility: initial;
         width: 50px; }
+      .mainrest-food:hover h3 {
+        width: 68%; }
       .mainrest-food:hover i {
         animation: rotateicon 0.5s ease-in-out forwards; }
       .mainrest-food:hover span {
@@ -323,18 +325,24 @@ ul {
     .mainrest-food h3 {
       white-space: nowrap;
       text-overflow: ellipsis;
-      overflow: hidden; }
-    .mainrest-food .mainrest-text {
-      display: flex;
-      flex-wrap: nowrap;
-      justify-content: space-between; }
-      .mainrest-food .mainrest-text p {
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis; }
-      .mainrest-food .mainrest-text span {
-        font-weight: bold;
-        transition-duration: 0.7s; }
+      overflow: hidden;
+      width: 100%;
+      transition: width 1s; }
+  .mainrest-text {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between; }
+    .mainrest-text p {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      width: 100%;
+      transition: width 1s; }
+      .mainrest-text p:hover {
+        width: 68%; }
+    .mainrest-text span {
+      font-weight: bold;
+      transition-duration: 0.7s; }
   .mainrest .slidebox {
     display: flex;
     justify-content: center;
