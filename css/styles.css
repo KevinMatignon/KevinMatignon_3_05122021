@@ -19,7 +19,8 @@ ul {
   margin-top: 20px;
   padding: 1rem;
   border-radius: 25px;
-  border: 1px solid;
+  border: none;
+  box-shadow: 4px 4px 2px lightgrey;
   color: white;
   background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
   font-size: 16px;
@@ -27,7 +28,9 @@ ul {
   cursor: pointer;
   transition-duration: 300ms; }
   .btn:hover {
-    transform: scale(1.05); }
+    transform: scale(1.01);
+    background: linear-gradient(170deg, rgba(255, 121, 218, 0.8) 0%, rgba(214, 108, 219, 0.8) 39%, rgba(171, 94, 220, 0.8) 85%, rgba(155, 89, 220, 0.8) 100%);
+    box-shadow: 3px 5px 2px #9356DC; }
 
 .btn-pages {
   display: flex;
@@ -37,7 +40,7 @@ ul {
   margin-top: 20px;
   padding: 1rem;
   border-radius: 25px;
-  border: 1px solid;
+  border: none;
   color: white;
   background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
   font-size: 16px;
@@ -45,7 +48,9 @@ ul {
   cursor: pointer;
   transition-duration: 300ms; }
   .btn-var:hover {
-    transform: scale(1.05); }
+    transform: scale(1.01);
+    background: linear-gradient(170deg, rgba(255, 121, 218, 0.8) 0%, rgba(214, 108, 219, 0.8) 39%, rgba(171, 94, 220, 0.8) 85%, rgba(155, 89, 220, 0.8) 100%);
+    box-shadow: 3px 5px 2px #9356DC; }
 
 /*LOADING SPINNER*/
 .loader {
