@@ -24,7 +24,6 @@ ul {
   color: white;
   background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
   font-size: 16px;
-  font-weight: bold;
   cursor: pointer;
   transition-duration: 300ms; }
   .btn:hover {
@@ -44,7 +43,6 @@ ul {
   color: white;
   background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
   font-size: 16px;
-  font-weight: bold;
   cursor: pointer;
   transition-duration: 300ms; }
   .btn-var:hover {
@@ -58,8 +56,6 @@ ul {
   height: 100%;
   position: fixed;
   background-color: #FFF;
-  left: 0;
-  top: 0;
   z-index: 10000;
   animation: loader 3s forwards; }
 
@@ -202,7 +198,7 @@ ul {
     padding: 0.8rem; }
     .restaurants-text h3 {
       display: flex;
-      align-items: flex-end;
+      align-items: center;
       justify-content: space-between; }
   .restaurants .empty {
     position: absolute;
