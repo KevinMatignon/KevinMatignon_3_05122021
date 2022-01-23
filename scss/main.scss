@@ -247,6 +247,7 @@ ul{
             background: linear-gradient(0deg, #ff79da 0%, #9356dc 100%);
             color: transparent;
             -webkit-background-clip: text;
+            -moz-background-clip: text;
             animation: fill 0.5s ease forwards;
             transform: scale(1.15);
         }
@@ -389,6 +390,9 @@ ul{
             }
             & span{
                 transform: translateX(-50px);
+            }
+            & p{
+                width: 68%;
             }           
     }
     & h3{
@@ -407,11 +411,8 @@ ul{
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
-        width: 100%;
         transition: width 1s;
-        &:hover{
-            width: 68%;
-        }
+        width: 100%;
     }
     & span{
         font-weight: bold;
