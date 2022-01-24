@@ -1,5 +1,3 @@
-SamuelRochwerg_3_11012021
-
 Projet 3 "Ohmyfood", Openclassrooms.
 
 # Ohmyfood
@@ -8,8 +6,6 @@ Troisième projet du parcours développeur web chez OpenClassrooms : "Dynamisez 
 
 L'objectif est de réaliser l'intégration de la maquette d'un site de réservation de restaurants nommé "Ohmyfood" (voir l'image ci-dessous), avec des animations CSS.
 
-![image](https://user-images.githubusercontent.com/74596401/112172756-45d88c00-8bf5-11eb-82bd-e7479f576920.png)
-
 ## Technologies, logiciels et langages utilisés
 - Visual Studio Code
 - Git et Github
@@ -17,9 +13,7 @@ L'objectif est de réaliser l'intégration de la maquette d'un site de réservat
 - CSS3
 - SASS
 - Gimp
-- Plugins : Liveserver, Beautify
 - Flexbox
-- Devtools
 - Le développement devra se faire en CSS, sans JavaScript
 - Aucun code CSS ne devra être appliqué via un attribut style dans une balise HTML
 
